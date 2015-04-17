@@ -1,0 +1,75 @@
+body {
+  background-color: black;
+}
+
+img {
+  cursor: pointer;
+}
+
+h1 {
+  text-color: white;
+}
+
+h3 {
+  float: left;
+  text-align: center;
+  color: white;
+}
+
+h4 {
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.cheese {
+  border: 2px solid white;
+  border-radius: 25px;
+  max-height: 300px;
+  max-width: 300px;
+  float: left;
+}
+
+.pep {
+  border: 2px solid white;
+  border-radius: 25px;
+  max-height: 300px;
+  max-width: 300px;
+  float: right;
+}
+
+#results {
+  display: none;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#results1 {
+  display: none;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#results2 {
+  display: none;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#cheesebutton {
+  cursor: pointer;
+}
+#pepbutton {
+  float: right;
+  cursor: pointer;
+
+}
