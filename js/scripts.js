@@ -4,6 +4,7 @@ var total_pep = 0;
 var cheese_pizzas = 0;
 var pep_pizzas = 0;
 var total_pizzas = 0;
+var total_cost = 0;
 
 var Pizza = {
   basic: 10,
@@ -31,6 +32,11 @@ var Pizza = {
   pizza_total: function() {
     total_pizzas = pep_pizzas + cheese_pizzas;
     return total_pizzas;
+  },
+
+  cost_total: function() {
+    total_cost = total_cheese + total_pep;
+    return total_cost;
   }
 };
 
@@ -65,6 +71,7 @@ $(document).ready(function(){
       pizzaType = "cheese";
       $("#results").show().html("<h1>" + "Your total for the cheese pizza is " + total_cheese + "$" + "</h1>");
       $("#results1").show().html("<h1>" + "Cheese Pizzas Ordered: " + cheese_pizzas + "</h1>");
+      event.preventDefault();
     });
   });
 
@@ -73,6 +80,14 @@ $(document).ready(function(){
       pizzaType = "pep";
       $("#results").show().html("<h1>" + "Your total for the pepperoni pizza is " + total_pep + "$" + "</h1>");
       $("#results1").show().html("<h1>" + "Pepperoni Pizzas Ordered: " + pep_pizzas + "</h1>");
+      event.preventDefault();
+    });
+  });
+
+  $(function() {
+    $("#totalbutton").click(function(event) {
+      $('#results3').show().html("<h2>" + "Your order total is " + Pizza.cost_total() + "$" + "</h2>");
+      event.preventDefault();
     });
   });
 

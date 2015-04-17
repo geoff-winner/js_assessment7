@@ -6,8 +6,10 @@ img {
   cursor: pointer;
 }
 
-h1 {
-  text-color: white;
+h2 {
+  text-align: center;
+  cursor: pointer;
+  color: white;
 }
 
 h3 {
@@ -46,21 +48,28 @@ h4 {
 #results {
   display: none;
   text-align: center;
-  font-size: 25px;
+  font-size: 15px;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 #results1 {
   display: none;
   text-align: center;
-  font-size: 25px;
+  font-size: 15px;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 #results2 {
   display: none;
   text-align: center;
-  font-size: 25px;
+  font-size: 15px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#results3 {
+  display: none;
+  text-align: center;
+  font-size: 15px;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -71,5 +80,8 @@ h4 {
 #pepbutton {
   float: right;
   cursor: pointer;
-
+}
+#totalbutton {
+  text-align: center;
+  cursor: pointer;
 }
